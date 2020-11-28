@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Medium Clap",
+    "description": "This extension will allow you to give 50 claps to any medium article that you read with a click of a single button",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.medium.com/*"],
+        "css": ["style.css"],
+        "js": ["content.js"]
+      }],
+    "permissions": [
+     "activeTab"
+     ]
+  }
