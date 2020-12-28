@@ -21,13 +21,13 @@ var actualCode =  '(' + function(){
             }
             
             
-            // for(let i =0; i < 49; i++){
-                timer = setInterval(() => {
-                    triggerMouseEvent(svg, 'mousedown')
-                    triggerMouseEvent(svg, 'mouseup')
-                }, 200)
            
-            // }
+               timer = setInterval(() => {
+                   triggerMouseEvent(svg, 'mousedown')
+                   triggerMouseEvent(svg, 'mouseup')
+               }, 200)
+           
+       
                 
         
             }
